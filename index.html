@@ -42,13 +42,13 @@
     <path d="M42 178 Q42 122 100 122 Q158 122 158 178 Z" fill="#ffffff"/>
 </svg>
 
-	<form action="https://formspree.io/f/xrppkjj" method="POST">
-	    <!-- Твои поля ввода (input, textarea) оставь как есть -->
-	    <input type="text" name="name" placeholder="Твое имя">
-	    <input type="email" name="email" placeholder="Твоя почта">
-	    <textarea name="message" placeholder="Сообщение"></textarea>
-	    <button type="submit">Отправить</button>
-	</form>
+	<form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="text" name="name" placeholder="Ваше имя" data-i18n-placeholder="namePlaceholder" required>
+        <input type="email" name="email" placeholder="Ваш Email" data-i18n-placeholder="emailPlaceholder" required>
+        <textarea name="message" placeholder="Сообщение" data-i18n-placeholder="msgPlaceholder" rows="4" required></textarea>
+        <button type="submit" class="btn" data-i18n="sendBtn">Отправить</button>
+    </form>
 
 		</div><div class="maketing"><li> <a href="https://github.com/features/copilot">Профиль GitHub</a> </li>
 			<li><a href="https://my.bsu.ru/portfolio.php">Портфолио</a></li>  
